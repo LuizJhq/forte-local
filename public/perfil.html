@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meu Perfil - Forte Local Marketplace">
+    <title>Meu Perfil - Forte Local</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9,22 9,12 15,12 15,22"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Forte<span class="logo-highlight">Local</span></span>
+            </a>
+            
+            <!-- Navegação Desktop -->
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="index.html#categorias" class="nav-link">Categorias</a>
+                <a href="index.html#produtos" class="nav-link">Produtos</a>
+                <a href="perfil.html" class="nav-link active">Perfil</a>
+            </div>
+            
+            <!-- Ações -->
+            <div class="nav-actions">
+                <!-- Botão Dark Mode -->
+                <button class="btn-icon" id="btn-dark-mode" title="Alternar tema">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                
+                <!-- Botão Anunciar -->
+                <a href="index.html" class="btn btn-primary">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"/>
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                    </svg>
+                    Anunciar
+                </a>
+                
+                <!-- Menu Mobile -->
+                <button class="btn-icon mobile-menu-btn" id="mobile-menu-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Menu Mobile Dropdown -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html" class="mobile-link">Início</a>
+            <a href="index.html#categorias" class="mobile-link">Categorias</a>
+            <a href="index.html#produtos" class="mobile-link">Produtos</a>
+            <a href="perfil.html" class="mobile-link active">Perfil</a>
+        </div>
+    </nav>
+
+    <!-- ==================== PERFIL SECTION ==================== -->
+    <section class="perfil-section">
+        <div class="container">
+            <!-- Header do Perfil -->
+            <div class="perfil-header">
+                <div class="perfil-cover">
+                    <div class="perfil-cover-gradient"></div>
+                </div>
+                
+                <div class="perfil-info">
+                    <div class="perfil-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=faces" alt="Foto de Perfil" id="perfil-foto">
+                        <div class="perfil-nivel-badge" id="perfil-nivel-badge">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <span id="nivel-numero">1</span>
+                        </div>
+                    </div>
+                    
+                    <div class="perfil-dados">
+                        <h1 class="perfil-nome" id="perfil-nome">Usuário Caçapavano</h1>
+                        <p class="perfil-local">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Caçapava do Sul, RS
+                        </p>
+                        <div class="perfil-reputacao">
+                            <div class="estrelas">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <span class="reputacao-texto">Excelente Reputação</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stats Cards -->
+            <div class="perfil-stats">
+                <div class="stat-card">
+                    <div class="stat-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
+                    <div class="stat-card-info">
+                        <span class="stat-card-value" id="stat-pontos">0</span>
+                        <span class="stat-card-label">Pontos</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                        </svg>
+                    </div>
+                    <div class="stat-card-info">
+                        <span class="stat-card-value" id="stat-anuncios">0</span>
+                        <span class="stat-card-label">Anúncios</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 20V10"/>
+                            <path d="M18 20V4"/>
+                            <path d="M6 20v-4"/>
+                        </svg>
+                    </div>
+                    <div class="stat-card-info">
+                        <span class="stat-card-value" id="stat-nivel">Nível 1</span>
+                        <span class="stat-card-label">Classificação</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <div class="stat-card-info">
+                        <span class="stat-card-value">Verificado</span>
+                        <span class="stat-card-label">Status</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Progresso do Nível -->
+            <div class="nivel-progress-card">
+                <div class="nivel-header">
+                    <div class="nivel-info">
+                        <h3>Seu Progresso</h3>
+                        <p>Publique mais anúncios para subir de nível!</p>
+                    </div>
+                    <div class="nivel-atual">
+                        <span class="nivel-badge" id="nivel-badge-grande">Nível 1</span>
+                    </div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <div class="progress-labels">
+                        <span id="pontos-atuais">0 pontos</span>
+                        <span id="pontos-proximo">100 pontos para o próximo nível</span>
+                    </div>
+                </div>
+                
+                <div class="nivel-beneficios">
+                    <h4>Benefícios do Próximo Nível:</h4>
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            Destaque nos resultados de busca
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            Badge exclusivo no perfil
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            Mais visibilidade para seus anúncios
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Meus Anúncios -->
+            <div class="meus-anuncios">
+                <div class="section-header">
+                    <h2 class="section-title">Meus Anúncios</h2>
+                    <a href="index.html" class="btn btn-outline">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                        Novo Anúncio
+                    </a>
+                </div>
+                
+                <div class="products-grid" id="meus-produtos-grid">
+                    <!-- Produtos do usuário serão inseridos via JavaScript -->
+                </div>
+                
+                <div class="empty-state" id="empty-meus-anuncios" style="display: none;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                    </svg>
+                    <h3>Você ainda não tem anúncios</h3>
+                    <p>Comece a vender agora mesmo!</p>
+                    <a href="index.html" class="btn btn-primary">
+                        Criar Meu Primeiro Anúncio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9,22 9,12 15,12 15,22"/>
+                            </svg>
+                        </div>
+                        <span class="logo-text">Forte<span class="logo-highlight">Local</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Fortalecendo o comércio local de Caçapava do Sul através da tecnologia.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegação</h4>
+                        <a href="index.html">Início</a>
+                        <a href="index.html#categorias">Categorias</a>
+                        <a href="index.html#produtos">Produtos</a>
+                        <a href="perfil.html">Meu Perfil</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Categorias</h4>
+                        <a href="index.html">Agro</a>
+                        <a href="index.html">Veículos</a>
+                        <a href="index.html">Eletrônicos</a>
+                        <a href="index.html">Serviços</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contato</h4>
+                        <a href="#">Suporte</a>
+                        <a href="#">Sobre Nós</a>
+                        <a href="#">Termos de Uso</a>
+                        <a href="#">Privacidade</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Forte Local - Caçapava do Sul, RS. Todos os direitos reservados.</p>
+                <p class="footer-credits">Feito com ❤️ para nossa cidade tão amada. </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== TOAST NOTIFICATION ==================== -->
+<div class="toast" id="toast">
+        <span id="toast-icon">
+    <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="20 6 9 17 4 12"/>
+    </svg>
+</span>
+        <span class="toast-message" id="toast-message">Sucesso!</span>
+    </div>
+
+    <!-- JavaScript Principal -->
+    <script src="script.js"></script>
+</body>
+</html>
